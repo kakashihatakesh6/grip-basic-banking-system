@@ -16,7 +16,7 @@ const AllTransactions = () => {
             setTransData(data);
 
         } catch (error) {
-            console.log("Some Error Occurred!")
+            console.log("Some Error Occurred!");
         }
     }
 

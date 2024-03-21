@@ -1,4 +1,4 @@
-# Star Wars Guide Application
+# Grip Basic Banking System
 
 This is a React-based Weather Web Application with support for multiple weather related data such as current temp, wind, 3 hour forecast etc.
 Visit the Application -

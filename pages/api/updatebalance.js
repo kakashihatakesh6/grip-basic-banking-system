@@ -6,9 +6,9 @@ const handler = async (req, res) => {
         const { amount, email } = req.body.bodyData;
         try {
             await Customer.findOneAndUpdate( {email: email }, { currentBalance: amount } );
-            res.status(200).json({ success: true, message: "Balance Updated Successfully!" })
+            res.status(200).json({ success: true, message: "Balance Updated Successfully!" });
         } catch (error) { 
-            res.status(500).json({ success: false, message: "Internal Server Error!" })
+            res.status(500).json({ success: false, message: "Internal Server Error!" });
         }
     }
 
