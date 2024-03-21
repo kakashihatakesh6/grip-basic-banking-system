@@ -32,26 +32,32 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="w-full fixed z-40">
+    <nav className="h-full md:w-52 fixed z-40 bg-zinc-950">
       <div
-        className={`px-4 md:px-16 py-6 flex flex-row items-center transition duration-500 ${
+        className={`px-4 hidden md:px-8 py-6 md:flex flex-col items-center transition duration-500 ${
           showBackground ? "bg-black bg-opacity-100" : ""
         }`}
       >
-        <img className="h-4 lg:h-7" src="/star-wars-logo.svg" alt="logo" />
+        <img className="h-24 w-24" src="/v-bank-white.png" alt="logo" />
 
-        <div className="flex-row ml-8 gap-7 hidden lg:flex">
-          <Link href={"/"}>
-            <NavbarItem label="Home" />
+        <div className="flex-col mt-16 items-start gap-4 hidden lg:flex">
+          <Link href={"/dashboard"}>
+            <NavbarItem label="Dashboard" />
           </Link>
-          <Link href={"/planets"}>
-            <NavbarItem label="Planets" />
+          <Link href={"/customers"}>
+            <NavbarItem label="Customers" />
           </Link>
-          <Link href={"/movies"}>
-            <NavbarItem label="Movies" />
+          <Link href={"/moneytransfer"}>
+            <NavbarItem label="Money Transfer" />
           </Link>
-          <Link href={"/characters"}>
-            <NavbarItem label="Characters" />
+          <Link href={"/alltransactions"}>
+            <NavbarItem label="Transactions" />
+          </Link>
+          <Link href={"/contact"}>
+            <NavbarItem label="Contact Us" />
+          </Link>
+          <Link href={"/help"}>
+            <NavbarItem label="Help Desk" />
           </Link>
          
         </div>
@@ -69,13 +75,16 @@ const Navbar = () => {
           <MobileMenu visible={showMobileMenu} />
         </div>
 
-        <div className="flex flex-row ml-auto gap-7 items-center">
-          <div className="text-gray-200 hover:text-gray-300 cursor-pointer">
+        <div className="flex flex-row mt-5 gap-7 items-center">
+
+          {/* <div className="text-gray-200 hover:text-gray-300 cursor-pointer">
             <BsSearch />
-          </div>
-          <div className="text-gray-200 hover:text-gray-300 cursor-pointer">
+          </div> */}
+
+          {/* <div className="text-gray-200 hover:text-gray-300 cursor-pointer">
             <BsBell />
-          </div>
+          </div> */}
+       
         </div>
       </div>
     </nav>

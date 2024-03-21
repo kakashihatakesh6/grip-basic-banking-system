@@ -14,19 +14,19 @@ const MobileMenu = ({visible}) => {
                 Home
             </div>
             <div className="px-3 text-white text-center hover:underline">
-                Series
+                View All Customers
             </div>
             <div className="px-3 text-white text-center hover:underline">
-                Films
+                Transfer Money
             </div>
             <div className="px-3 text-white text-center hover:underline">
-                New & Popular
+                All Transactions
             </div>
             <div className="px-3 text-white text-center hover:underline">
-                My List
+                Help
             </div>
             <div className="px-3 text-white text-center hover:underline">
-                Browse by languages
+                Contact Us
             </div>
 
         </div>
