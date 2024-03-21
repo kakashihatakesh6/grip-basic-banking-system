@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-import DepositeCard from "@/components/DepositeCard";
 import { useEffect, useState } from "react";
 
 export default function Home({ customerList }) {
@@ -16,8 +15,6 @@ export default function Home({ customerList }) {
   useEffect(() => {
     getTotalBalance();
   }, [])
-
-
 
 
 

@@ -8,9 +8,7 @@ const Contact = () => {
 
             <div className="flex flex-col px-10 space-y-3 items-center md:flex-row justify-center w-full space-x-5 mt-10">
 
-                
-
-
+            
 
 
 
